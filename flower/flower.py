@@ -23,6 +23,15 @@ class Flower:
         self.messages_cache = []
         self.scores = dataIO.load_json('data/flower/scores.json')
 
+    @commands.command(pass_context=True, no_pm=True, name='howlong')
+    async def howlong(self, context, user: discord.Member):
+        """This will get when a given user joined"""
+        server = context.message.server
+        date = user.joined_at
+
+        await self.bot.say('User ' + user.display_name + ' joined at ' + date.strftime('%d.%m.%Y - %H:%m:%S'))
+
+
     @commands.command(pass_context=True, no_pm=True, name='flowertop', aliases=['ftop'])
     async def flowertop(self, context):
         """This will show the top hunters on this server"""
