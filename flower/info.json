@@ -1,0 +1,10 @@
+{
+    "AUTHOR" : "Taimont Becquerel",
+    "INSTALL_MSG" : "Ich kann gar nicht programmieren.",
+    "NAME" : "Flower",
+    "SHORT" : "Ich kann gar nicht programmieren.",
+    "DESCRIPTION" : "Ich kann gar nicht programmieren. Ernsthaft.",
+    "TAGS" : ["nadeko", "game", "flower"],
+    "REQUIREMENTS" : ["numpy"],
+    "HIDDEN" : false
+}
