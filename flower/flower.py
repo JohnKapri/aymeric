@@ -29,6 +29,10 @@ class Flower:
         server = context.message.server
         date = user.joined_at
 
+        if context.message == 'mydick':
+            await self.bot.say('Not as long as mine. Lol.')
+            return
+
         await self.bot.say('User ' + user.display_name + ' joined at ' + date.strftime('%d.%m.%Y - %H:%m:%S'))
 
 
